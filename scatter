@@ -19,4 +19,4 @@ done
 # Get the number of processors -----------------
 export NUMPROC=’cat $PBS_NODEFILE|wc -l’
 # Execute the code ------------------------------
-mpirun -machinefile $CONF -np $NUMPROC python mpi_scatter.py
+mpirun -machinefile $CONF -np $NUMPROC python ./mpi_scatter.py
